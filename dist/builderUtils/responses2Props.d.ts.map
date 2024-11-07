@@ -1,0 +1,1 @@
+{"version":3,"file":"responses2Props.d.ts","sourceRoot":"","sources":["../../src/builderUtils/responses2Props.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,eAAe,CAAC;AAE/C,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,gBAAgB,CAAC;AAEhD,MAAM,MAAM,QAAQ,GAAG;IAAE,IAAI,EAAE,MAAM,CAAC;IAAC,KAAK,EAAE,MAAM,GAAG,SAAS,CAAA;CAAE,CAAC;iCAE3C,SAAS,CAAC,gBAAgB,CAAC,WAAW,CAAC;AAA/D,wBAuBuC"}
