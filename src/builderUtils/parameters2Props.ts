@@ -29,7 +29,7 @@ export default (params: OpenAPIV3.ComponentsObject['parameters'], openapi: OpenA
         if (!value) return null;
 
         prop = {
-          name: getPropertyName(target.name),
+          name: getPropertyName(target.name).replace(/_([a-z])/g, (_, c) => c.toUpperCase()),
           required: target.required ?? false,
           description: target.description ?? null,
           values: [value],

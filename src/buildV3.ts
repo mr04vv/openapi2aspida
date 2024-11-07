@@ -106,7 +106,7 @@ export default (openapi: OpenAPIV3.Document) => {
                     if (!value) return;
 
                     const prop = {
-                      name: getPropertyName(p.name),
+                      name: getPropertyName(p.name).replace(/_([a-z])/g, (_, c) => c.toUpperCase()),
                       required: p.required ?? false,
                       description: p.description ?? null,
                       values: [value],

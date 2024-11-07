@@ -60,7 +60,7 @@ const object2value = (obj: OpenAPIV3.NonArraySchemaObject): Prop[] => {
       if (!val) return null;
 
       return {
-        name: getPropertyName(name),
+        name: getPropertyName(name).replace(/_([a-z])/g, (_, c) => c.toUpperCase()),
         required: obj.required?.includes(name) ?? false,
         description: val.description,
         values: [val],
